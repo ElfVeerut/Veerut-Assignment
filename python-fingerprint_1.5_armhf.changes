@@ -1,0 +1,46 @@
+Format: 1.8
+Date: Sun, 09 Apr 2017 21:46:27 +0200
+Source: python-fingerprint
+Binary: python-fingerprint python-fingerprint-doc python3-fingerprint
+Architecture: source all
+Version: 1.5
+Distribution: stable
+Urgency: medium
+Maintainer: Philipp Meisberger <team@pm-codeworks.de>
+Changed-By: Philipp Meisberger <team@pm-codeworks.de>
+Description:
+ python-fingerprint - Python 2 written library for using ZhianTec fingerprint sensors
+ python-fingerprint-doc - API documentation for PyFingerprint
+ python3-fingerprint - Python 3 written library for using ZhianTec fingerprint sensors
+Changes:
+ python-fingerprint (1.5) stable; urgency=medium
+ .
+   * Added support for Python 3 (still compatible with Python 2)
+   * storeTemplate() can be used without arguments
+     * The template is stored at the next free index automatically
+     * BREAKING CHANGE: The index is returned! In previous releases this was a
+       boolean value.
+   * Introduced getStorageCapacity() to retrieve the sensor template capacity
+   * Introduced generateRandom() which generates a random number on the builtin
+     hardware PRNG of the ZFM
+Checksums-Sha1:
+ 09997a3f844f7f82e9f604dd06a1a2e6ae4ab607 1030 python-fingerprint_1.5.dsc
+ 0d7859ae2b86d89a5575887fc86c366569e1fbd5 11972 python-fingerprint_1.5.tar.xz
+ c510f6dbef2b02e4fb27403e6f813013b473dd6f 21268 python-fingerprint-doc_1.5_all.deb
+ 1f8c4de5e0b0b8a7ab17caf1333d8a8bb13c8e81 10804 python-fingerprint_1.5_all.deb
+ 7a72b65018f6b6d3e67006aa8aac6b114a3df7b0 6848 python-fingerprint_1.5_armhf.buildinfo
+ 66bbe0dbe1f0e498905cfdde4c2eb0a2713de288 10852 python3-fingerprint_1.5_all.deb
+Checksums-Sha256:
+ fb062021fd7e3165715eac0286acfaf025da91705c1b16e84e41e4c8c387b164 1030 python-fingerprint_1.5.dsc
+ e6d61b5d1b7fa6e8238c6bcfaef901c36238e4d16006cd354e60bf75c1f49d94 11972 python-fingerprint_1.5.tar.xz
+ c7535359b57fecd53004598465e565759e999f1665145edfc79565e911495a3c 21268 python-fingerprint-doc_1.5_all.deb
+ cfc3bced59281e886614d6faed580c5e72ac337b9568b1196cee636428bea9d9 10804 python-fingerprint_1.5_all.deb
+ 10b08a2775464cdfb62aba2c9f7678d53f93433ce28a86f80ef6d3e9607ce247 6848 python-fingerprint_1.5_armhf.buildinfo
+ cf88f62ba8a61718a1a0aac9d74d9058d41f9d6a8d994cc6741eb1eed9916566 10852 python3-fingerprint_1.5_all.deb
+Files:
+ 0fa6fc7560c6559eb852efa4363fb16f 1030 python optional python-fingerprint_1.5.dsc
+ ec79d2c33e1acf7f45d26fd8423c235f 11972 python optional python-fingerprint_1.5.tar.xz
+ 32f4648c550532643a1df25eb6dcf3ef 21268 doc optional python-fingerprint-doc_1.5_all.deb
+ 75a3f740a41136a85ce60f527eebb34d 10804 python optional python-fingerprint_1.5_all.deb
+ 2a025b1dfc128bc40b83bfb9f493f590 6848 python optional python-fingerprint_1.5_armhf.buildinfo
+ 8ab3ac153d2b4ccb6d2c2ccfb1fab8ba 10852 python optional python3-fingerprint_1.5_all.deb
